@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css?family=Noto Serif|Noto Serif');
+
+/* Global */
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: #354F8C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 32px 0;
+}
+
+h2 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 32px 0;
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: lighter;
+  margin: 24px 0;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.padded-box {
+  padding: 32px 24px 32px 16px;
+}
+
+.left-column {
+  padding: 32px 24px 0;
+  flex-basis: 60%;
+}
+
+.left-column img {
+  width: 100%;
+}
+
+.right-column {
+  min-width: 423px;
+  flex-basis: 40%;
+}
+
+/* ------------------------ header ---------------------------*/
+
+header {
+  height: 64px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  color: #354F8C;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.icon-set {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  margin-left: 16px;
+}
+
+nav.small-screen-only {
+  width: 100%;
+}
+
+/* ------------------------ Learn Section ----------------------- */
+
+section#learn {
+  background-color: #354F8C;
+  color: #fff;
+  padding-bottom: 32px;
+}
+
+#learn button {
+  background-color: #151f33;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: "Noto Serif", sans-serif;
+  font-size: 1rem;
+  padding: 8px 0;
+  transition: all 200ms linear 0.1s;
+  width: 100%;
+}
+
+#learn button i {
+  margin-right: 2rem;
+  margin-left: -2rem;
+}
+
+#learn button:hover {
+  background-color: #fff;
+  color: #151f33;
+}
+
+/* ------------------------ Practice Section ----------------------- */
+
+#practice{
+  padding-bottom: 32px;
+}
+blockquote {
+  margin: 0;
+  font-family: "Noto-Serif", serif;
+}
+
+cite {
+  margin-top: 1.5rem;
+  display: block;
+}
+
+#practice .right-column {
+  padding-left: 0;
+}
+.side-features {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-feature:first-child {
+  margin-top: 16px;
+}
+
+.side-feature:nth-child(3n+3) {
+  background-color: #CCC5A4;
+  color: #4C3B1A;
+}
+
+.side-feature {
+  padding: 16px;
+  display: flex;
+}
+
+.side-feature .image-container {
+  flex-basis: 35%;
+  margin: 0 16px 0 0;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.side-feature-text {
+  flex-basis: 65%;
+  justify-content: center;
+}
+
+.side-feature h1 {
+  margin: 8px 0;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.side-feature a {
+  font-size: 0.8rem;
+  font-weight: lighter;
+  margin: 16px 0;
+  line-height: 1.5;
+}
+
+/* ------------------------ Start Learning Section ----------------------- */
+
+section#start-learning {
+  background-color: #797252;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 32px;
+}
+
+#start-learning h1 {
+  margin: 0 0 16px 0;
+}
+
+#start-learning .course-list-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.course-container {
+  background-color: #CCC5A4;
+  margin: 16px;
+  width: 33%;
+}
+
+.course-container img {
+    width: 100%;
+}
+
+#start-learning .course-text {
+  text-align: left;
+  padding: 16px;
+}
+
+#start-learning .course-text h2 {
+  margin: 0;
+  text-shadow: 1px 1px 4px #A29A75;
+}
+
+#start-learning .course-text h3, #start-learning p {
+  margin: 8px 0;
+  color: #4C3B1A;
+}
+
+#start-learning .course-text p {
+    color: #4C3B1A;
+}
+
+/* ------------------------ Thesis Section ----------------------- */
+
+section#thesis {
+  background-color: #354F8C;
+  color: #fff;
+  display: block;
+  padding: 32px 0;
+}
+
+#thesis h1 {
+  margin: 0;
+  text-align: center;
+}
+
+#thesis .side-feature h1 {
+  text-align: left;
+}
+
+#thesis .side-feature:first-child {
+  background-color: #CCC5A4;
+  color: #4C3B1A;
+}
+
+#thesis .right-column {
+  padding-top: 16px;
+}
+
+video {
+  height: auto;
+  width: 100%;
+}
+
+
+/* ------------------------ Footer Section ----------------------- */
+
+
+footer {
+  padding: 0 24px;
+  border-top: 2px solid #003249;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  display: inline-block;
+  margin: 16px 0 0 16px;
+}
+
+
+
+
+/* ------------------------ Responsive ----------------------- */
+
+
+.large-screen-only {
+  display: block;
+}
+
+.small-screen-only {
+  display: none;
+}
+
+@media only screen and (max-width: 710px) {
+  .large-screen-only {
+    display: none;
+  }
+
+  .small-screen-only {
+    display: block;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .padded-box {
+    padding: 0;
+  }
+
+  .left-column, .right-column {
+    padding: 16px 16px 0;
+    flex-basis: 100%;
+  }
+
+  section#learn {
+    flex-direction: column;
+  }
+
+  #learn .left-column {
+    height: 180px;
+    background-color: gray;
+    background-image: url("../../resources/images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #learn h1 {
+    margin: 16px 0 32px 0;
+  }
+
+  .right-column.side-features {
+    padding: 0;
+  }
+
+  .side-feature {
+    padding: 0 16px;
+    margin: 16px 0;
+    flex-direction: column;
+  }
+
+  .side-feature-text {
+    padding: 16px 16px 0;
+  }
+
+  .side-feature:nth-child(3n+3) {
+    background-color: white;
+  }
+
+  section#start-learning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 16px;
+  }
+
+  #start-learning .course-list-row {
+    flex-direction: column;
+  }
+
+  #start-learning .course-container {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  #start-learning .course-container img,
+  #start-learning .course-container h3,
+  #start-learning .course-container p  {
+    display: none;
+  }
+
+  section#thesis {
+    padding-bottom: 24px;
+  }
+}
